@@ -12,9 +12,9 @@
     <!-- Социальные иконки вверху -->
     <div class="social-header">
         <div class="social-icons">
-            <a href="https://vk.com" target="_blank" class="social-icon" title="VK">VK</a>
-            <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">IG</a>
-            <a href="https://telegram.org" target="_blank" class="social-icon" title="Telegram">TG</a>
+            <a href="https://vk.com/dbravo777" target="_blank" class="social-icon" title="VK">VK</a>
+            <a href="https://www.instagram.com/d_bravo888?igsh=dGo4bXZyMGY0dzA3&utm_source=qr" target="_blank" class="social-icon" title="Instagram">IG</a>
+            <a href="https://t.me/dianabravo777" target="_blank" class="social-icon" title="Telegram">TG</a>
         </div>
     </div>
     
@@ -152,7 +152,7 @@
             
             setInterval(() => {
                 gradientAngle = (gradientAngle + 0.5) % 360;
-                logo.style.background = `linear-gradient(${gradientAngle}deg, #8b0000 0%, #2a0000 100%)`;
+                logo.style.background = `linear-gradient(${gradientAngle}deg, #800000 0%, #4a0000 100%)`;
                 logo.style.webkitBackgroundClip = 'text';
                 logo.style.backgroundClip = 'text';
             }, 50);
@@ -166,7 +166,7 @@
                 item.addEventListener('mouseenter', function() {
                     if (this.classList.contains('fallback')) {
                         this.innerHTML = `<span style="font-family: 'Courier New', monospace; 
-                            color: rgba(139, 0, 0, 0.5); 
+                            color: rgba(128, 0, 0, 0.5); 
                             font-size: 1.1rem; 
                             font-weight: 300;
                             z-index: 2;
@@ -210,13 +210,13 @@
                 if (quoteColor > 0.9 || quoteColor < 0.5) {
                     direction = -direction;
                 }
-                quote.style.color = `rgba(139, 0, 0, ${quoteColor})`;
+                quote.style.color = `rgba(128, 0, 0, ${quoteColor})`;
             }, 100);
             
             // Эффект для сказочного элемента
             const fairyTale = document.querySelector('.fairy-tale');
             setInterval(() => {
-                fairyTale.style.border = `1px dashed rgba(139, 0, 0, ${0.2 + Math.random() * 0.3})`;
+                fairyTale.style.border = `1px dashed rgba(128, 0, 0, ${0.2 + Math.random() * 0.3})`;
                 fairyTale.style.transform = `translateY(${Math.sin(Date.now()/1000)*3}px)`;
             }, 100);
             
@@ -241,3 +241,4 @@
     </script>
 
 </body>
+</html>
