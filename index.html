@@ -8,21 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Хэдер с логотипом и социальными иконками -->
+    <!-- Хэдер с логотипом по центру -->
     <div class="header-container">
-        <!-- Логотип в левом верхнем углу с подписью -->
-        <div class="logo-container-small">
-            <div class="logo-bright">DS</div>
-            <div class="logo-photographer">photographer</div>
-        </div>
-        
-        <!-- Социальные иконки в правом верхнем углу -->
-        <div class="social-header">
-            <div class="social-icons">
-                <a href="https://vk.com/dbravo777" target="_blank" class="social-icon" title="VK">VK</a>
-                <a href="https://www.instagram.com/d_bravo888?igsh=dGo4bXZyMGY0dzA3&utm_source=qr" target="_blank" class="social-icon" title="Instagram">IG</a>
-                <a href="https://t.me/dianabravo777" target="_blank" class="social-icon" title="Telegram">TG</a>
-            </div>
+        <!-- Логотип по центру -->
+        <div class="logo-container-center">
+            <div class="logo-bright-large">D|S</div>
+            <div class="logo-photographer-center">photographer</div>
         </div>
     </div>
     
@@ -50,9 +41,9 @@
     </div>
     
     <div class="container">
-        <!-- Серии (бывшая Галерея) -->
+        <!-- Истории (бывшая Галерея) -->
         <section id="gallery">
-            <h2>Серии</h2>
+            <h2>Истории</h2>
             <p style="color: rgba(0, 0, 0, 0.7); margin-bottom: 20px; font-weight: 300;">Визуальные сказки, созданные с вдохновением от вашей энергии. Каждая фотография — отдельная история, наполненная атмосферой и эмоциями.</p>
             
             <div class="gallery-grid">
@@ -137,7 +128,7 @@
                     <div class="greeting">Привет! Я Диана.</div>
                     
                     <div class="about-paragraph">
-                        Я люблю сказки и сама их снимать.
+                        Люблю сказки и сама их снимаю.
                     </div>
                     
                     <div class="motto">
@@ -169,16 +160,20 @@
         <!-- Длинная черная линия через весь экран -->
         <div class="full-line-divider"></div>
         
-        <!-- Контакты -->
+        <!-- Контакты с социальными иконками -->
         <section id="contacts">
             <div class="contact-info">
                 <div class="contact-name">Диана Браво</div>
                 <div class="contact-phone">+7 981 906-81-28</div>
                 
-                <div class="contact-divider"></div>
-                
-                <div class="contact-social">инстаграм @d_bravo888</div>
-                <div class="contact-social">телеграмм @dianabravo777</div>
+                <!-- Социальные иконки добавлены сюда -->
+                <div class="social-footer">
+                    <div class="social-icons-footer">
+                        <a href="https://vk.com/dbravo777" target="_blank" class="social-icon-footer" title="VK">VK</a>
+                        <a href="https://www.instagram.com/d_bravo888?igsh=dGo4bXZyMGY0dzA3&utm_source=qr" target="_blank" class="social-icon-footer" title="Instagram">IG</a>
+                        <a href="https://t.me/breakthrough1511" target="_blank" class="social-icon-footer" title="Telegram">TG</a>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -215,47 +210,46 @@
             padding: 15px 30px;
             z-index: 200;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             border-bottom: 1px solid rgba(139, 0, 0, 0.15);
             backdrop-filter: blur(10px);
         }
 
-        /* Контейнер для логотипа */
-        .logo-container-small {
+        /* Контейнер для логотипа по центру */
+        .logo-container-center {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
         }
 
-        /* Логотип DS - теперь с тем же шрифтом, что и photographer */
-        .logo-bright {
+        /* Логотип D|S - большие буквы БЕЗ КУРСИВА */
+        .logo-bright-large {
             font-family: 'Snell Roundhand', cursive, 'MedievalSharp', cursive;
-            font-size: 1.8rem;
-            font-weight: 400; /* Такая же толщина, как у photographer */
-            color: rgba(128, 0, 0, 0.9); /* Простой красный цвет вместо градиента */
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: rgba(128, 0, 0, 0.9);
             letter-spacing: 2px;
-            padding: 6px 12px;
-            height: 40px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-transform: uppercase;
             position: relative;
             z-index: 201;
-            font-style: normal; /* Убираем курсив для DS */
+            font-style: normal !important; /* Убеждаемся, что курсив отключен */
         }
 
-        /* Подпись photographer */
-        .logo-photographer {
+        /* Подпись photographer под логотипом */
+        .logo-photographer-center {
             font-family: 'Snell Roundhand', cursive, 'MedievalSharp', cursive;
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 400;
             color: rgba(128, 0, 0, 0.8);
             letter-spacing: 1px;
             font-style: italic;
             text-transform: lowercase;
-            padding: 4px 8px;
             position: relative;
             z-index: 201;
         }
@@ -329,21 +323,50 @@
             display: none !important;
         }
 
+        /* Стили для социальных иконок в футере */
+        .social-footer {
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .social-icons-footer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .social-icon-footer {
+            font-family: 'MedievalSharp', cursive;
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.7);
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid rgba(128, 0, 0, 0.2);
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon-footer:hover {
+            background-color: rgba(128, 0, 0, 0.1);
+            color: rgba(128, 0, 0, 0.9);
+            transform: translateY(-2px);
+        }
+
         /* Адаптивность для нового хэдера */
         @media (max-width: 768px) {
             .header-container {
                 padding: 10px 20px;
             }
             
-            .logo-bright {
-                font-size: 1.6rem;
-                padding: 5px 10px;
-                height: 36px;
+            .logo-bright-large {
+                font-size: 2.2rem;
+                height: 45px;
             }
             
-            .logo-photographer {
-                font-size: 0.9rem;
-                padding: 3px 6px;
+            .logo-photographer-center {
+                font-size: 1rem;
             }
             
             .header-spacing {
@@ -355,54 +378,78 @@
                 height: 40px;
                 padding: 8px;
             }
+            
+            .social-icons-footer {
+                gap: 15px;
+            }
+            
+            .social-icon-footer {
+                font-size: 0.85rem;
+                padding: 5px 10px;
+            }
         }
 
         @media (max-width: 600px) {
-            .logo-bright {
-                font-size: 1.4rem;
-                padding: 4px 8px;
-                height: 32px;
+            .logo-bright-large {
+                font-size: 2rem;
+                height: 40px;
             }
             
-            .logo-photographer {
-                font-size: 0.8rem;
-                padding: 2px 4px;
+            .logo-photographer-center {
+                font-size: 0.9rem;
             }
             
             .header-spacing {
                 height: 90px;
             }
+            
+            .social-icons-footer {
+                gap: 10px;
+            }
+            
+            .social-icon-footer {
+                font-size: 0.8rem;
+                padding: 4px 8px;
+            }
         }
 
         @media (max-width: 480px) {
             .header-container {
-                flex-direction: column;
-                gap: 10px;
                 padding: 10px 15px;
             }
             
-            .logo-container-small {
-                width: 100%;
-                justify-content: center;
+            .logo-container-center {
+                gap: 3px;
             }
             
-            .social-header {
-                width: 100%;
+            .logo-bright-large {
+                font-size: 1.8rem;
+                height: 35px;
             }
             
-            .social-icons {
-                justify-content: center;
-                width: 100%;
+            .logo-photographer-center {
+                font-size: 0.8rem;
             }
             
             .header-spacing {
-                height: 140px;
+                height: 100px;
             }
             
             .zoom-icon-image {
                 width: 35px;
                 height: 35px;
                 padding: 7px;
+            }
+            
+            .social-icons-footer {
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: center;
+            }
+            
+            .social-icon-footer {
+                font-size: 0.75rem;
+                padding: 3px 6px;
             }
         }
    </style>
