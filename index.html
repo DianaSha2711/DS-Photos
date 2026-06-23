@@ -33,7 +33,7 @@
             background-attachment: fixed; 
         }
 
-        /* Контейнер для хэдера */
+        
         .header-container {
             position: fixed;
             top: 0;
@@ -49,7 +49,7 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Контейнер для логотипа по центру */
+        
         .logo-container-center {
             display: flex;
             flex-direction: column;
@@ -57,7 +57,7 @@
             gap: 5px;
         }
 
-        /* Логотип D|S - большие буквы с шрифтом MedievalSharp */
+        
         .logo-bright-large {
             font-family: 'MedievalSharp', cursive;
             font-size: 2.5rem;
@@ -1084,6 +1084,18 @@
                     <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-58.jpg?raw=true" alt="Альбом Мария" class="album-cover">
                     <div class="album-title">Мария</div>
                 </div>
+
+                <!-- Альбом "Алина" -->
+                <div class="album" data-album="alina">
+                    <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-29-59.jpg?raw=true" alt="Альбом Алина" class="album-cover">
+                    <div class="album-title">Алина</div>
+                </div>
+
+                <!-- Альбом "Анастасия" -->
+                <div class="album" data-album="anastasiya">
+                    <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051853_w.jpg?raw=true" alt="Альбом Анастасия" class="album-cover">
+                    <div class="album-title">Анастасия</div>
+                </div>
             </div>
             
             <!-- Просмотр альбома "Полина" -->
@@ -1105,13 +1117,14 @@
                 </div>
             </div>
             
-            <!-- Просмотр альбома "Мария" -->
+            <!-- Просмотр альбома "Мария" (ОБНОВЛЕН - 8 фотографий) -->
             <div class="album-view" id="albumMaria">
                 <div class="album-header">
                     <h3>Альбом: Мария</h3>
                     <button class="back-button">Вернуться к альбомам</button>
                 </div>
                 <div class="album-gallery">
+                    <!-- Старые фотографии Марии -->
                     <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-58.jpg?raw=true" data-alt="Студийное фото Мария 1">
                         <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-58.jpg?raw=true" alt="Студийное фото Мария 1">
                     </div>
@@ -1120,6 +1133,96 @@
                     </div>
                     <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-56%20(2).jpg?raw=true" data-alt="Студийное фото Мария 3">
                         <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-56%20(2).jpg?raw=true" alt="Студийное фото Мария 3">
+                    </div>
+                    <!-- НОВЫЕ фотографии Марии -->
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051845_w.jpg?raw=true" data-alt="Студийное фото Мария 4">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051845_w.jpg?raw=true" alt="Студийное фото Мария 4">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051846_w.jpg?raw=true" data-alt="Студийное фото Мария 5">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051846_w.jpg?raw=true" alt="Студийное фото Мария 5">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051847_w.jpg?raw=true" data-alt="Студийное фото Мария 6">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051847_w.jpg?raw=true" alt="Студийное фото Мария 6">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051848_w.jpg?raw=true" data-alt="Студийное фото Мария 7">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051848_w.jpg?raw=true" alt="Студийное фото Мария 7">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051849_w.jpg?raw=true" data-alt="Студийное фото Мария 8">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051849_w.jpg?raw=true" alt="Студийное фото Мария 8">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Просмотр альбома "Алина" (НОВЫЙ) -->
+            <div class="album-view" id="albumAlina">
+    <div class="album-header">
+        <h3>Альбом: Алина</h3>
+        <button class="back-button">Вернуться к альбомам</button>
+    </div>
+    <div class="album-gallery">
+        <!-- Старые фотографии Алины (6 шт) -->
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-29-59.jpg?raw=true" data-alt="Студийное фото Алина 1">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-29-59.jpg?raw=true" alt="Студийное фото Алина 1">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-07.jpg?raw=true" data-alt="Студийное фото Алина 2">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-07.jpg?raw=true" alt="Студийное фото Алина 2">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-42.jpg?raw=true" data-alt="Студийное фото Алина 3">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-42.jpg?raw=true" alt="Студийное фото Алина 3">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-57.jpg?raw=true" data-alt="Студийное фото Алина 4">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-57.jpg?raw=true" alt="Студийное фото Алина 4">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-31-20.jpg?raw=true" data-alt="Студийное фото Алина 5">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-31-20.jpg?raw=true" alt="Студийное фото Алина 5">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-31-56.jpg?raw=true" data-alt="Студийное фото Алина 6">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-31-56.jpg?raw=true" alt="Студийное фото Алина 6">
+        </div>
+
+        <!-- НОВЫЕ фотографии Алины (6 шт) -->
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_15-35-56.jpg?raw=true" data-alt="Студийное фото Алина 7">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_15-35-56.jpg?raw=true" alt="Студийное фото Алина 7">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_17-58-16.jpg?raw=true" data-alt="Студийное фото Алина 8">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_17-58-16.jpg?raw=true" alt="Студийное фото Алина 8">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_20-38-02%20(2).jpg?raw=true" data-alt="Студийное фото Алина 9">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_20-38-02%20(2).jpg?raw=true" alt="Студийное фото Алина 9">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_20-38-02.jpg?raw=true" data-alt="Студийное фото Алина 10">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_20-38-02.jpg?raw=true" alt="Студийное фото Алина 10">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_21-39-30.jpg?raw=true" data-alt="Студийное фото Алина 11">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_21-39-30.jpg?raw=true" alt="Студийное фото Алина 11">
+        </div>
+        <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_21-39-31.jpg?raw=true" data-alt="Студийное фото Алина 12">
+            <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-02-21_21-39-31.jpg?raw=true" alt="Студийное фото Алина 12">
+        </div>
+    </div>
+</div>
+
+            <!-- Просмотр альбома "Анастасия" (НОВЫЙ) -->
+            <div class="album-view" id="albumAnastasiya">
+                <div class="album-header">
+                    <h3>Альбом: Анастасия</h3>
+                    <button class="back-button">Вернуться к альбомам</button>
+                </div>
+                <div class="album-gallery">
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051853_w.jpg?raw=true" data-alt="Студийное фото Анастасия 1">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051853_w.jpg?raw=true" alt="Студийное фото Анастасия 1">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051858_w.jpg?raw=true" data-alt="Студийное фото Анастасия 2">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051858_w.jpg?raw=true" alt="Студийное фото Анастасия 2">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051860_y.jpg?raw=true" data-alt="Студийное фото Анастасия 3">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051860_y.jpg?raw=true" alt="Студийное фото Анастасия 3">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051867_y.jpg?raw=true" data-alt="Студийное фото Анастасия 4">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051867_y.jpg?raw=true" alt="Студийное фото Анастасия 4">
+                    </div>
+                    <div class="album-item" data-image="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051868_y.jpg?raw=true" data-alt="Студийное фото Анастасия 5">
+                        <img src="https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051868_y.jpg?raw=true" alt="Студийное фото Анастасия 5">
                     </div>
                 </div>
             </div>
@@ -1169,9 +1272,9 @@
                 <div class="contact-phone">+7 981 906-81-28</div>
                 <div class="social-footer">
                     <div class="social-icons-footer">
-                        <a href="https://vk.com/dbravo777" target="_blank" class="social-icon-footer" title="VK">VK</a>
-                        <a href="https://www.instagram.com/d_bravo888?igsh=dGo4bXZyMGY0dzA3&utm_source=qr" target="_blank" class="social-icon-footer" title="Instagram">IG</a>
-                        <a href="https://t.me/breakthrough1511" target="_blank" class="social-icon-footer" title="Telegram">TG</a>
+                        <a href="https://vk.com/dbravo777" target="_blank" class="social-icon-footer" title="ВК">VK</a>
+                        <a href="https://www.instagram.com/d_bravo888?igsh=dGo4bXZyMGY0dzA3&utm_source=qr" target="_blank" class="social-icon-footer" title="Инстаграм">IG</a>
+                        <a href="https://t.me/breakthrough1511" target="_blank" class="social-icon-footer" title="Телеграм">TG</a>
                     </div>
                 </div>
             </div>
@@ -1302,6 +1405,8 @@
             const albumsContainer = document.getElementById('albumsContainer');
             const albumPolina = document.getElementById('albumPolina');
             const albumMaria = document.getElementById('albumMaria');
+            const albumAlina = document.getElementById('albumAlina');
+            const albumAnastasiya = document.getElementById('albumAnastasiya');
             const backButtons = document.querySelectorAll('.back-button');
             const albumModal = document.getElementById('albumModal');
             const albumModalImage = document.getElementById('albumModalImage');
@@ -1310,7 +1415,7 @@
             const albumNextButton = document.getElementById('albumNextButton');
             const albumImageCounter = document.getElementById('albumImageCounter');
             
-            // Данные альбомов
+            // Данные альбомов (ОБНОВЛЕНЫ)
             const albums = {
                 polina: {
                     title: "Полина",
@@ -1330,12 +1435,58 @@
                     images: [
                         "https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-58.jpg?raw=true",
                         "https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-57.jpg?raw=true",
-                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-56%20(2).jpg?raw=true"
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/photo_2025-12-22_16-32-56%20(2).jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051845_w.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051846_w.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051847_w.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051848_w.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Mariya/photo_5406778619650051849_w.jpg?raw=true"
                     ],
                     altTexts: [
                         "Студийное фото Мария 1",
                         "Студийное фото Мария 2",
-                        "Студийное фото Мария 3"
+                        "Студийное фото Мария 3",
+                        "Студийное фото Мария 4",
+                        "Студийное фото Мария 5",
+                        "Студийное фото Мария 6",
+                        "Студийное фото Мария 7",
+                        "Студийное фото Мария 8"
+                    ]
+                },
+                alina: {
+                    title: "Алина",
+                    images: [
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-29-59.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-07.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-42.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-30-57.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-31-20.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Alina/photo_2026-03-04_14-31-56.jpg?raw=true"
+                    ],
+                    altTexts: [
+                        "Студийное фото Алина 1",
+                        "Студийное фото Алина 2",
+                        "Студийное фото Алина 3",
+                        "Студийное фото Алина 4",
+                        "Студийное фото Алина 5",
+                        "Студийное фото Алина 6"
+                    ]
+                },
+                anastasiya: {
+                    title: "Анастасия",
+                    images: [
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051853_w.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051858_w.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051860_y.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051867_y.jpg?raw=true",
+                        "https://github.com/DianaSha2711/dsphotos/blob/main/img/Anastasiya/photo_5406778619650051868_y.jpg?raw=true"
+                    ],
+                    altTexts: [
+                        "Студийное фото Анастасия 1",
+                        "Студийное фото Анастасия 2",
+                        "Студийное фото Анастасия 3",
+                        "Студийное фото Анастасия 4",
+                        "Студийное фото Анастасия 5"
                     ]
                 }
             };
@@ -1356,14 +1507,25 @@
             function showAlbum(albumName) {
                 albumsContainer.style.display = 'none';
                 
+                // Скрываем все альбомы
+                albumPolina.style.display = 'none';
+                albumMaria.style.display = 'none';
+                albumAlina.style.display = 'none';
+                albumAnastasiya.style.display = 'none';
+                
+                // Показываем нужный альбом
                 if (albumName === 'polina') {
                     albumPolina.style.display = 'block';
-                    albumMaria.style.display = 'none';
                     currentAlbum = 'polina';
                 } else if (albumName === 'maria') {
-                    albumPolina.style.display = 'none';
                     albumMaria.style.display = 'block';
                     currentAlbum = 'maria';
+                } else if (albumName === 'alina') {
+                    albumAlina.style.display = 'block';
+                    currentAlbum = 'alina';
+                } else if (albumName === 'anastasiya') {
+                    albumAnastasiya.style.display = 'block';
+                    currentAlbum = 'anastasiya';
                 }
                 
                 // Прокрутка к началу альбома
@@ -1376,6 +1538,8 @@
                     albumsContainer.style.display = 'flex';
                     albumPolina.style.display = 'none';
                     albumMaria.style.display = 'none';
+                    albumAlina.style.display = 'none';
+                    albumAnastasiya.style.display = 'none';
                     
                     // Прокрутка к началу раздела
                     document.querySelector('#studio').scrollIntoView({ behavior: 'smooth' });
@@ -1394,6 +1558,10 @@
                         currentAlbum = 'polina';
                     } else if (parentAlbum.id === 'albumMaria') {
                         currentAlbum = 'maria';
+                    } else if (parentAlbum.id === 'albumAlina') {
+                        currentAlbum = 'alina';
+                    } else if (parentAlbum.id === 'albumAnastasiya') {
+                        currentAlbum = 'anastasiya';
                     }
                     
                     // Находим индекс текущего изображения
